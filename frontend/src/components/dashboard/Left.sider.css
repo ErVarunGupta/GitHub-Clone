@@ -1,0 +1,54 @@
+
+.left-container{
+    background-color: #1d1c1c;
+    width: 260px;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    border-right: 1px solid #6d6a6a;
+    border-radius:0 .5rem .5rem 0;
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100vh;
+    z-index: 1;
+}
+
+
+
+.left-github-icon{
+    display: flex;
+    justify-content: space-between;
+    padding: .5rem;
+    align-items: center;
+}
+
+.cross{
+    background-color: rgb(30, 40, 50);
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: .2rem;
+    border-radius: .3rem;
+    cursor: pointer;
+    opacity: .6;
+}
+.cross:hover{
+    opacity: 1;
+}
+
+.left-contents{
+    display: flex;
+    flex-direction: column;
+    padding: 0 1rem;
+    gap: 1rem;
+}
+
+.left-contents p{
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    font-size: .9rem;
+    cursor: pointer;
+}

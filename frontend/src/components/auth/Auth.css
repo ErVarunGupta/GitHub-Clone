@@ -1,0 +1,54 @@
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.form-container{
+    background-color: #12151c;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 2rem 3rem;
+    border: none;
+    border-radius: .5rem;
+    margin: 1.5rem 0 ;
+    width: 15rem;
+}
+
+.inner-container{
+    display: flex;
+    flex-direction: column;
+}
+
+.inner-container input{
+    background-color: #000;
+    padding: .5rem;
+    border: 2px solid rgb(172, 165, 165);
+    border-radius: .5rem;
+    margin-top: .2rem;
+    color: #fff;
+}
+
+.form-btn{
+    background-color: #126e26;
+    padding: .5rem;
+    border: none;
+    border-radius: .5rem;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.form-btn:hover{
+    background-color: #40a556;
+}
+
+.is-account{
+    border: 2px solid rgb(52, 51, 51);
+    padding: 1rem 3rem;
+    border-radius: .5rem;
+    width: 15rem;
+}
