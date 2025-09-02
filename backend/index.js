@@ -10,7 +10,6 @@ import cors from 'cors';
 import userRoute from "./routes/user.router.js";
 import { yargsCommand } from "./yargsCommands.js";
 import mainRouter from "./routes/main.router.js";
-import cors from 'cors';
 
 const startServer = () => {
   const app = express();
