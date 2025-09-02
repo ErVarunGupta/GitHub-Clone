@@ -1,6 +1,8 @@
 import { Link } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
 
+const api_url = import.meta.env.VITE_API_URL;
+
 export const Login = () => {
     const navigate = useNavigate();
     const formSubmitHandler = async(formData) =>{
@@ -8,7 +10,7 @@ export const Login = () => {
         console.log(formInputData);
 
         try {
-            const url = "http://localhost:3000/users/login";
+            const url = `${api_url}/users/login`;
             const response = await fetch(url, {
                 method: "POST",
                 headers: {

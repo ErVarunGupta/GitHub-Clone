@@ -3,6 +3,7 @@ import "./Profile.css";
 import HeatMapProfile from "./HeatMapProfile";
 import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
+const api_url = import.meta.env.VITE_API_URL;
 
 export const Profile = () => {
   const [profileData, setProfileData] = useState({});
@@ -19,7 +20,7 @@ export const Profile = () => {
             navigate("/");
           }, 1000);
         }
-        const url = "http://localhost:3000/users/userProfile";
+        const url = `${api_url}/users/userProfile`;
         const response = await fetch(url, {
           method: "GET",
           headers: {

@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import "./Auth.css";
 import { useNavigate } from "react-router-dom";
+const api_url = import.meta.env.VITE_API_URL;
 
 export const Signup = () => {
     const navigate = useNavigate();
@@ -9,7 +10,7 @@ export const Signup = () => {
         console.log(formInputData);
 
         try {
-            const url = "http://localhost:3000/users/signup";
+            const url = `${api_url}/users/signup`;
             const response = await fetch(url, {
                 method: 'POST',
                 headers: {

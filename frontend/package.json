@@ -12,6 +12,7 @@
   "dependencies": {
     "@babel/runtime": "^7.28.3",
     "@uiw/react-heat-map": "^2.3.3",
+    "dotenv": "^17.2.1",
     "jwt-decode": "^4.0.0",
     "react": "^19.1.1",
     "react-dom": "^19.1.1",

@@ -5,6 +5,7 @@ import { Navbar } from "../Navbar";
 import { LeftSider } from "./Left.sider";
 import Sidebar from "./Right.sider";
 import { useNavigate, Link } from "react-router-dom";
+const api_url = import.meta.env.VITE_API_URL;
 
 export const Dashboard = () => {
   const [repositories, setRepositories] = useState([]);
@@ -22,7 +23,7 @@ export const Dashboard = () => {
   useEffect(() => {
     const token = localStorage.getItem("token");
     const fetchRepositories = async () => {
-      const url = "http://localhost:3000/repo/getCurrRepos";
+      const url = `${api_url}/repo/getCurrRepos`;
       const result = await fetch(url, {
         headers: {
           Authorization: token,
@@ -34,7 +35,7 @@ export const Dashboard = () => {
     };
 
     const fetchAllRepositories = async () => {
-      const url = "http://localhost:3000/repo/all";
+      const url = `${api_url}/repo/all`;
       const response = await fetch(url, {
         headers: {
           Authorization: token,

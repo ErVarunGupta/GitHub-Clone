@@ -1,6 +1,7 @@
 import '../auth/Auth.css';
 import { Navbar } from '../Navbar';
 import { useNavigate } from 'react-router-dom';
+const api_url = import.meta.env.VITE_API_URL;
 
 export const NewRepo = () => {
     const navigate = useNavigate();
@@ -16,7 +17,7 @@ export const NewRepo = () => {
         }, 1000);
       }
 
-      const url = "http://localhost:3000/repo/create";
+      const url = `${api_url}/repo/create`;
       const response = await fetch(url, {
         method: "POST",
         headers: {
